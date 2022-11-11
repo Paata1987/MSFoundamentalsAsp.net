@@ -5,18 +5,17 @@ namespace ContrcrWebsite.Models
 {
     public class Product
     {
-        public string Id { get; set; }
-        public string maker { get; set; }
-
+        public string? Id { get; set; }
+        public string? Maker { get; set; }
 
         [JsonPropertyName("img")]
-        public string img { get; set; }
-        public string title { get; set; }
-        public string url { get; set; }
-        public string description { get; set; }
-        public int[] Rating { get; set; }
+        public string? Image { get; set; }
+        public string? Url { get; set; }
+        public string? Title { get; set; }
+        public string? Description { get; set; }
+        public int[]? Ratings { get; set; }
 
-        public override string ToString()=> JsonSerializer.Serialize(this);
-     
+        public override string ToString() => JsonSerializer.Serialize<Product>(this);
+
     }
 }
