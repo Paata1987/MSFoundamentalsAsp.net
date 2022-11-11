@@ -1,14 +1,14 @@
-﻿﻿.checked {
+﻿/*﻿.checked {
     color: orange;
 }
 
 .fa-star {
     cursor: pointer;
-}
+}*/
 
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-.card-columns .card:hover .card-img {
+/*.card-columns .card:hover .card-img {
     opacity: 1;
     -webkit-transform-style: preserve-3d;
 }
@@ -26,15 +26,15 @@ for details on configuring this project to bundle and minify static web assets. 
     Center the image background-repeat: no-repeat;
     Do not repeat the image background-size: cover;
     Resize the background image to cover the entire container opacity: .8;
+    .modal .card-img
 
-
-.modal .card-img {
+{
     height: 500px;
     vertical-align: bottom;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
+    background-position: center;*/ /* Center the image */
+    /*background-repeat: no-repeat;*/ /* Do not repeat the image */
+    /*background-size: cover;*/ /* Resize the background image to cover the entire container */
+/*}
 
 .card-columns .card:hover {
     transform: scale(1.05);
@@ -52,10 +52,10 @@ a.navbar-brand {
     font-size: xx-large;
     text-align: center;
     word-break: break-all;
-}
+}*/
 
 /* Provide sufficient contrast against white background */
-a {
+/*a {
     color: #0366d6;
 }
 
@@ -75,11 +75,11 @@ a {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
-}
+}*/
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+/*html {
     font-size: 14px;
 }
 
@@ -104,18 +104,18 @@ html {
 button.accept-policy {
     font-size: 1rem;
     line-height: inherit;
-}
+}*/
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+/*html {
     position: relative;
     min-height: 100%;
 }
 
-body {
+body {*/
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;
 }
 
 p {
@@ -135,11 +135,11 @@ ul {
     bottom: 0;
     width: 100%;
     white-space: nowrap;
-    line-height: 60px; /* Vertically center the text there */
-    font-family: 'Nunito', sans-serif;
-}
+    line-height: 60px;*/ /* Vertically center the text there */
+    /*font-family: 'Nunito', sans-serif;
+}*/
 /*Backgrounds*/
-.bg-navbar {
+/*.bg-navbar {
     background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
@@ -151,4 +151,4 @@ ul {
     background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
-}
+}*/
