@@ -12,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
 builder.Services.AddControllers();
 builder.Services.AddTransient<JsonFileProductService>();
 
@@ -35,20 +36,24 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapControllers();
+app.MapBlazorHub();
 
 
 //app.UseEndpoints(endpoints =>
 //{
-        
-//        endpoints.MapControllers();
-        
+//    endpoints.MapRazorPages();
+//    endpoints.MapControllers();
+//    endpoints.MapBlazorHub();
 
-//        // endpoints.MapGet("/products", (context) => 
-//        // {
-//        //     var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
-//        //     var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
-//        //     return context.Response.WriteAsync(json);
-//        // });
+
+
+
+//    //        // endpoints.MapGet("/products", (context) => 
+//    //        // {
+//    //        //     var products = app.ApplicationServices.GetService<JsonFileProductService>().GetProducts();
+//    //        //     var json = JsonSerializer.Serialize<IEnumerable<Product>>(products);
+//    //        //     return context.Response.WriteAsync(json);
+//    //        // });
 //});
 
 app.Run();

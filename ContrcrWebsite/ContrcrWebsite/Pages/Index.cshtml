@@ -1,5 +1,5 @@
 ﻿@page
-@model IndexModel
+@using ContrcrWebsite.Components
 @{
     ViewData["Title"] = "Home page";
 }
@@ -8,22 +8,7 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
-<div class="d-flex justify-content-center row">
-    @foreach (var product in Model.Products)
-    {
 
-        <div class="card p-3 m-3 " style="width: 18rem;">
-            <img src='@product.Image' class="card-img-top" alt="...">
-           
-            <div class="card-body">
-                <h5 class="card-title"> @product.Title</h5>
-                <p class="card-text">@product.Description</p>
-            </div>
-        </div>
+@(await Html.RenderComponentAsync<ProductList>(RenderMode.ServerPrerendered))
 
-
-    }
-
-</div>
-
-
+<script src="_framework/blazor.server.js"></script>
